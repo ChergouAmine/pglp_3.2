@@ -13,7 +13,7 @@ public class Vendeur extends Employe{
 	@Override
 	public void incAnnee()
 	{
-		annee++;
+		super.incAnnee();
 		salaire+=commission;
 	}
 	
