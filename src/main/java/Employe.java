@@ -1,23 +1,28 @@
 
-public class Employe extends Entreprise{
+public class Employe{
 
 	int salaire;
 	int annee;
 	
-	public Employe(int s,int a)
+	public Employe(int s) throws IllegalArgumentException
 	{
-		salaire=s;
-		annee=a;
+		if(s<1200)
+			throw new IllegalArgumentException("le salaire ne peut être infèrieur au SMIC");
+		else {
+			salaire=s;
+			annee=0;
+		}
+
 	}
 	
-	@Override
+	
 	public int getSalaire()
 	{
 		return salaire;
 	}
 	
-	@Override
-	public void incSalaire()
+	
+	public void incAnnee()
 	{
 		annee++;
 		salaire+=20;

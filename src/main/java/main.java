@@ -6,12 +6,12 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Entreprise> e=new ArrayList<Entreprise>();
+		ArrayList<Employe> e=new ArrayList<Employe>();
 		
-		e.add(new Employe(1500,3));
-		e.add(new Employe(1300,1));
-		e.add(new Vendeur(2000,6,50));
-		e.add(new Vendeur(2800,12,70));
+		e.add(new Employe(1500));
+		e.add(new Employe(1300));
+		e.add(new Vendeur(2000,50));
+		e.add(new Vendeur(2800,70));
 		
 		int somme=0;
 		

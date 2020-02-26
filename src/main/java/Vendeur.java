@@ -1,27 +1,19 @@
 
 
-public class Vendeur extends Entreprise{
+public class Vendeur extends Employe{
 
-	int salaire;
-	int annee;
 	int commission;
 	
-	public Vendeur(int s,int a,int c)
+	public Vendeur(int s,int c)
 	{
-		salaire=s;
-		annee=a;
+		super(s);
 		commission=c;
 	}
 	
 	@Override
-	public int getSalaire()
+	public void incAnnee()
 	{
-		return salaire;
-	}
-	
-	@Override
-	public void incSalaire()
-	{
+		annee++;
 		salaire+=commission;
 	}
 	
